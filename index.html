@@ -86,7 +86,8 @@
 
         $(function() {
             $('form').submit(function() {
-                const num = $('select[name="num"]').val();
+                const num = $('input[name="num"]').val();
+                const num = $('select[name="time"]').val();
                 const msg = "時間予約\n"+`${num}`+"\n"+`${time}`;
                 sendText(msg);
                 return false;
